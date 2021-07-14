@@ -1,26 +1,23 @@
-// form container
+// Form Container
 const form = document.getElementById('form');
 const input = document.getElementById('input-text');
-// task container
-const list = document.getElementById("list");
+// Task Container
+const taskList = document.getElementById("taskList");
 const itemTemplate = document.getElementById("item").content;
-const fragment = document.createDocumentFragment();
-
 
 form.addEventListener('submit', evt => {
-    const taskValue = input.value;
-    function validation () {
-        if(taskValue.length === 0) {
-        } else {
-            list.classList.add('list__task')
+    const taskValue = input.value.trim();
+    const addTask = () => {
+        if(taskValue != "") {
+            taskList.classList.add('list__task');
             const clone = itemTemplate.cloneNode(true);
             const text = clone.querySelector(".task__text");
             text.textContent = taskValue;
-            fragment.appendChild(clone);
-            list.appendChild(fragment);
+            taskList.appendChild(clone);
         }
     }
 
-    validation()
-    evt.preventDefault()
+    addTask();
+    evt.preventDefault();
 });
+

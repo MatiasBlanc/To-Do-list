@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #0D0C2D;
+}
+
+.form__container {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    background: #202041;
+    padding: 20px 0;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+.form__addtask {
+    height: 70px;
+    background: #383858;
+    color: #eee;
+    border: none;
+}
+
+.form__input {
+    width: 75%;
+    font-size: 30px;
+    padding: 0 20px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-family: 'Roboto';
+}
+
+.form__input::placeholder {
+    color: #eee;
+}
+
+.form__submit {
+    padding-right: 30px;
+    font-size: 40px;
+    border-radius: 0 20px 20px 0;
+}
+
+.form__submit:hover {
+    cursor: pointer;
+}
+
+.list__task {
+    background-color: #202041;
+    list-style: none;
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.task__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    margin: 20px;
+    color: #eee;
+    background-color: #383858;
+    border-radius: 10px;
+}
+
+.task__text {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.task__throw {
+}

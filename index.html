@@ -7,23 +7,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="form__container" id="form">
-        <input class="form__input form__addtask" type="text" name="Add Task" placeholder="Add Task" id="input-text" autocomplete="off" maxlength="50">
-        <button class="fas fa-paper-plane form__submit form__addtask"></button>
+    <form class="form" id="form">
+        <input class="form__input form__addtask" name="inputTask" placeholder="Add Task" autocomplete="off">
+        <button class="form__submit form__addtask fas fa-paper-plane"></button>
     </form>
     
     <ul id="taskList">
     </ul>
 
     <template id="item">
-        <li class="task__container">
-                <i class="fas fa-trash task__throw"></i>
-                <p class="task__text"></p>
+        <li class="task">
+                <i class="task__throw fas fa-trash"></i>
+            <span class="task__text"></span>
         </li>
     </template>
     <script src="app.js"></script>
